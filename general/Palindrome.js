@@ -12,4 +12,5 @@ const isPalindromeHelper = (word, begin, end) => {
     }
 };
 
-console.log(isPalindrome(["lolo"]));
+console.log(isPalindrome(["lolol"]));
+//console.log("hello".charAt(4));
