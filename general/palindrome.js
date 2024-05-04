@@ -13,3 +13,8 @@ const palindromeHelper = (word, begin, end) => {
 };
 
 console.log(palindrome("racecar"));
+str = "racecar";
+str.__proto__.pop= function(){
+  return this.str.length - 1
+};
+console.log(str.__proto__);
