@@ -21,3 +21,5 @@ const baseball = ops => {
     return result.length ? result.reduce((curr, prev) => curr + prev) : 0;
 };
 console.log(baseball(["5", "2", "C", "D", "+"]));
+console.log(baseball(["5", "-2", "4", "C", "D", "9", "+", "+"]));
+console.log(baseball(["1",]));
