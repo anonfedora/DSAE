@@ -18,4 +18,8 @@ const parenthesis = s => {
     return !stack.length;
 };
 
-console.log(parenthesis("(()[]{}({[]}))"));
+console.log(parenthesis("(()[]{}({[]}))")); //true
+console.log(parenthesis("((())){}[{}]")); //true
+console.log(parenthesis("(({[]}))")); //true
+console.log(parenthesis("(({[}))")); //false
+console.log(parenthesis("([]{}))")); //false
