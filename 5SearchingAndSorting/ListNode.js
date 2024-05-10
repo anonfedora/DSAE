@@ -1,16 +1,28 @@
 class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null; // Points to the next node in the list
-  }
+    constructor() {
+        this.data = 0;
+        this.next = null; // Points to the next node in the list
+    }
 }
 
+function insert(head, data) {
+    let node = new Node();
+    node.data = data;
+    node.next = head;
+    head = node;
+}
 // Creating nodes
-const node1 = new Node(10);
-const node2 = new Node(20);
+function printList(head) {
+    while (head != null) {
+        console.log("->" + head.data);
+        head = head.next;
+    }
+}
 
-// Connecting nodes using .next
-node1.next = node2;
-
-console.log(node1.data); // Output: 10
-console.log(node1.next.data); // Output: 20 (Following the .next reference)
+let head = null;
+head = insert(head, 5);
+head = insert(head, 4);
+head = insert(head, 3);
+head = insert(head, 2);
+head = insert(head, 1);
+printList(head);
