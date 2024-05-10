@@ -14,6 +14,11 @@ const baseball = ops => {
             case "C":
                 result.pop();
                 break;
+            case typeof ops[i] !== "D" ||
+                typeof ops[i] !== "C" ||
+                typeof ops[i] !== "+" ||
+                typeof ops[i] !== Number:
+                console.log("Invalid Entry");
             default:
                 result.push(parseInt(ops[i]));
         }
@@ -22,4 +27,5 @@ const baseball = ops => {
 };
 console.log(baseball(["5", "2", "C", "D", "+"]));
 console.log(baseball(["5", "-2", "4", "C", "D", "9", "+", "+"]));
-console.log(baseball(["1",]));
+console.log(baseball(["1"]));
+console.log(baseball(["5", "-2", "4", "C", "D", "9", "+", "B"]));
