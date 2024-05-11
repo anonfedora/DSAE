@@ -13,6 +13,7 @@ function preOrder(node) {
         console.log(node.data);
         preOrder(node.left);
         preOrder(node.right);
+        return node
     }
 }
 
