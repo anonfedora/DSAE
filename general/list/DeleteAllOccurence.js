@@ -31,5 +31,5 @@ function deleteKey(head, key) {
             temp = temp.next;
         }
     }
-    return head
+    return head;
 }
