@@ -31,9 +31,12 @@ function palindrome(head) {
 
     while (head != null) {
         var i = stack.pop();
-        if (head.data == i) {isPalindrome = true;}
-        else {isPalindrome = false;
-        break;}
+        if (head.data == i) {
+            isPalindrome = true;
+        } else {
+            isPalindrome = false;
+            break;
+        }
         head = head.next;
     }
     return isPalindrome;
@@ -45,7 +48,7 @@ head = push(head, 1);
 head = push(head, 2);
 head = push(head, 2);
 head = push(head, 2);
-head = push(head, 1);
+//head = push(head, 1);
 head = push(head, 1);
 printList(head);
 console.log("isPalindrome", palindrome(head));
