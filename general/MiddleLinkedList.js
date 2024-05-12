@@ -20,10 +20,8 @@ function middle(head) {
         vec.push(temp.data);
         temp = temp.next;
     }
-    //console.log(vec.length)
-    var midIdx = Math.floor((vec.length) / 2);
-    //console.log(midIdx)
-    return vec[midIdx]
+    var midIdx = Math.floor(vec.length / 2);
+    return vec[midIdx];
 }
 
 function printList(node) {
