@@ -6,10 +6,12 @@ class Node {
 }
 
 const printList = node => {
+  var str = ''
     while (node != null) {
-        console.log(node.data + "->");
+      str += node.data + "->"
         node = node.next;
     }
+        console.log(str);
 };
 
 const push = (head, data) => {
