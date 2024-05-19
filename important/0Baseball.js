@@ -10,10 +10,10 @@ const calPoints = ops => {
         } else if (ops[i] == "D") {
             result.push(result[result.length - 1] * 2);
         }
+    }
         let total = result.reduce((prev, curr) => {
             return prev + curr;
         });
-    }
 
     return total;
 };
