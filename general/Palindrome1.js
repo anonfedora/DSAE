@@ -9,7 +9,7 @@ const palindromeHelper = (word, begin, end) => {
       return false
       
     } else {
-        return palindrome(word, begin + 1, end - 1);
+        return palindromeHelper(word, begin + 1, end - 1);
     }
 };
-console.log(palindrome((word = "swims")));
+console.log(palindrome(("lol")));
