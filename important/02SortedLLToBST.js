@@ -30,13 +30,6 @@ const printList = node => {
     }
     console.log(str + "NULL");
 };
-/*
-const printList = node => {
-    while (node != null) {
-        console.log(node.data);
-        node = node.next;
-    }
-};*/
 
 const preOrder = node => {
     if (node == null) return;
