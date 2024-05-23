@@ -20,7 +20,7 @@ const preOrder = node => {
     if (node == null) {
         return;
     }
-    console.log(node.data + " ");
+    console.log(node.data + " " );
     preOrder(node.left);
     preOrder(node.right);
 };
@@ -30,9 +30,6 @@ var root,
 var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 root = arrayToBST(array, 0, array.length - 1);
 preOrder(root);
-var arr = [5, 4, 3, 2, 1, 6, 7, 8,9];
-arr.sort()
-//arr.sort((a, b) => a - b)
-console.log('second array')
-root2 = arrayToBST(arr, 0, arr.length - 1);
-preOrder(root2);
+//console.log("second array");
+//root2 = arrayToBST(arr, 0, arr.length - 1);
+//preOrder(root2);
