@@ -1,8 +1,9 @@
 const isPalindrome = str => {
-    const reversed = str.split("").reverse().join("");
+    const reversed = str.toLowerCase().split("").reverse().join("");
+    console.log(reversed);
     return str === reversed;
 };
 
-console.log(isPalindrome("racecar"));
+console.log(isPalindrome("race car"));
 console.log(isPalindrome("mattam"));
 console.log(isPalindrome("mattamo"));
