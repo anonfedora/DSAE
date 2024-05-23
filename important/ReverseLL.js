@@ -31,7 +31,7 @@ const reverseList = head => {
         prev = curr;
         curr = next;
     }
-    
+    head= prev
     return head;
 };
 
