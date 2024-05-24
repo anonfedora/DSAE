@@ -29,7 +29,7 @@ const getMiddle = head => {
         head = head.next;
     }
 
-    let mid = Math.floor(parseInt(stack.length / 2));
+    let mid = (parseInt(stack.length / 2));
     return stack[mid];
 };
 
