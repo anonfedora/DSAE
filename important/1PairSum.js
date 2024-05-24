@@ -19,12 +19,12 @@ const push = (head, data) => {
 };
 
 const printList = node => {
-  var str = ''
+    var str = "";
     while (node != null) {
-      str += node.data + "->"
+        str += node.data + "->";
         node = node.next;
     }
-        console.log(str);
+    console.log(str + "NULL");
 };
 
 const pairSum = (head, x) => {
@@ -33,15 +33,13 @@ const pairSum = (head, x) => {
     let found = false;
 
     while (second.next != null) second = second.next;
-    /*  console.log(first);
-    console.log(first.data);
-    console.log(second.data); */
+
     while (first != second && first != second.next) {
         if (first.data + second.data == x) {
             found = true;
             console.log("(" + first.data + " , " + second.data + ")");
+            
             first = first.next;
-
             second = second.prev;
         } else {
             if (first.data + second.data < x) {
@@ -55,10 +53,12 @@ const pairSum = (head, x) => {
 
 let head = null;
 //console.log(head.data);
+head = push(head, 7);
 head = push(head, 5);
 head = push(head, 4);
 head = push(head, 3);
 head = push(head, 2);
 head = push(head, 1);
+head = push(head, -2);
 printList(head);
 pairSum(head, 5);
