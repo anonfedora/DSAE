@@ -5,32 +5,32 @@ class Node {
     }
 }
 
-const printList = node => {
-    var str = "";
-    while (node != null) {
-        str += node.data + "->";
-        node = node.next;
-    }
-    console.log(str+"NULL");
-};
-
-const push = (head, data) => {
+const push = (head, x) => {
     let node = new Node();
-    node.data = data;
+    node.data = x;
     node.next = head;
     head = node;
     return head;
 };
 
+const printList = node => {
+    let str = "";
+    while (node != null) {
+        str += node.data + "->";
+        node = node.next;
+    }
+    console.log(str + "NULL");
+};
+
 const getMiddle = head => {
-    let stack = [];
+    let vec = [];
     while (head != null) {
-        stack.push(head.data);
+        vec.push(head.data);
         head = head.next;
     }
 
-    let mid = (parseInt(stack.length / 2));
-    return stack[mid];
+    let mid = parseInt(vec.length / 2);
+    return vec[mid];
 };
 
 let head = null;
@@ -41,4 +41,4 @@ head = push(head, 3);
 head = push(head, 2);
 head = push(head, 1);
 printList(head);
-console.log(getMiddle(head));
+console.log(getMiddle(head))
