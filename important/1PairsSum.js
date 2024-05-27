@@ -9,11 +9,16 @@ const push = (head, data) => {
     let node = new Node();
     node.data = data;
     node.next = head;
-    head.prev = node
+    head.prev = node;
     head = node;
     return head;
 };
 
+const pairSum = (head, x) => { 
+  let first = head
+  let second = head
+  while (second.next != null)
+}
 const printList = node => {
     while (node != null) {
         console.log(node.data + "->");
