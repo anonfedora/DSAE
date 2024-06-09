@@ -1,4 +1,5 @@
 /**
+ * @Author Musa Eleazar Shekoaga
  * function checking if a combination of parenthesis os valid
  *
  * This function defines the data structure and validation rules for handling a basic
